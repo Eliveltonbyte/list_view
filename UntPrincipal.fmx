@@ -1,0 +1,464 @@
+object FrmPrincipal: TFrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Menu'
+  ClientHeight = 523
+  ClientWidth = 360
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object rectToolbar: TRectangle
+    Align = Top
+    Fill.Color = xFF0674EB
+    Size.Width = 360.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFF66AFFD
+    object lblPrincipal: TLabel
+      Align = Center
+      StyledSettings = [Style]
+      Size.Width = 126.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Candara'
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Text = 'PEDIDOS'
+      TabOrder = 0
+    end
+    object spdConfig: TSpeedButton
+      Align = Right
+      Margins.Top = 15.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Position.X = 310.000000000000000000
+      Position.Y = 15.000000000000000000
+      Size.Width = 40.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = spdConfigClick
+      object Image1: TImage
+        MultiResBitmap.Height = 32
+        MultiResBitmap.Width = 32
+        MultiResBitmap = <
+          item
+            Width = 32
+            Height = 32
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+              F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              01F7494441545847ED973B4BC350188693D40B5875A88AE2E0228AE02C2AE826
+              141C1DDA3FE0E8EEA6A30E0E0E824BC1419C14751174122F080E051D54145110
+              F417E896363E5FFBD90B5A4DD2A652E803879CBCE7BBBC3D2D39A9F1DF987A35
+              52A9D491E3387D7A1B28A669BE8442A168669E5180E64E3A9D4E30B5B34A6034
+              5896358B895CEF0C6AA0576F03437A482FBDCDC357B061DBF61B01A32A551C6A
+              8F480F7A6DAA9487C5308B978C470C76AA5C31A81FA1F6032349FD56958B9105
+              DC1D107447C280CA6543AD7E6ADE50FB9079BBCA3F434037C1D78C0BE65D2AFB
+              466A50EB540C3077F71B63277A484832CECBF93A6828DB7EC6B872DDFC0B1A0F
+              9178CBB6ED91DCA1B26BA439B9DBD4B8673EACB237481CA4C02B85F631D4A4F2
+              9F482C39BB922B3554F60705C629F444C104F336954B424C98D875729E994FAA
+              5C1E6AE29DC26B7CBAE2275801B246CC2AB11FCC27542E1F298C892885E521B2
+              225BAC4B39D01A19CB1243ECB4E4E852E5A0709C065CD231957288A66B71955C
+              61E9D5159C1F3B9C62F2C92259A58888AC498CDEBBC2AB81944E4BE226A6104F
+              0682A06EA06EA06EA0660DFCFE5AE5013F06923CEF17399496B836ABE61B3F06
+              C6F86331CF69378301796F8CC949A86BD583A62DECC21627A070829105B4EF7F
+              3882847E16630A23C7E2A2EA060A6107E66447F4B656308C4FA5999022A6BD51
+              650000000049454E44AE426082}
+            FileName = 'C:\Projetos\listview\img\icons8-filtro-vazio-50.png'
+          end>
+        Cursor = crHandPoint
+        HitTest = False
+        Margins.Bottom = 15.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object Image2: TImage
+      MultiResBitmap.Height = 50
+      MultiResBitmap.Width = 50
+      MultiResBitmap = <
+        item
+          Width = 50
+          Height = 50
+          PNG = {
+            89504E470D0A1A0A0000000D49484452000000320000003208060000001E3F88
+            B1000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            0767494441546843ED9A696C545514C767A60B950A08B2471159540454209268
+            EA02C2075040C5C4DD88C10448C02D2A1A1313BF6862C217E307631435866830
+            C660428C461605050185B0964D04C522B480015A4A3BF8FB1FCF1D67A62D7D5D
+            C6A9867F727A967B96FBDEBDEFBE79F736761E1D0C71E76DC6D9B3674BA05BA0
+            5B5107251289C1F5F5F5030A0A0A8AE1496C27A0AA783CBE03DA86FC2D7C3554
+            8B9C5FD0E94432999C4E4797D4D5D59D446F11883941EC47E498889AF0B4AD42
+            AB4684A2BAFB8FD28167B8E34364F3BBBE813BFC25B415792FB40FB9069EC0FF
+            42784F6818B66BF01F8F3C8678BB00F47246F165DA1643CA955BD0F91BB993DB
+            E998017927B6D9506F77890C627A414F64E5DB80ED5A7769128A75B165A04609
+            776D0185EABDE06692DD85989A12E8974133F07B1BFB0A7CF6407F40155039B4
+            92B637F1790CEAEF61CA1D87EEA47D075CB96B697F09B1D1E9465B1F7CB6B81A
+            1D04F622F0BB5084CEBC8258AC3671750CFB6AB54705FE49E524F621D490AB10
+            FD79ECA7E5439D4FD14BD51680B92FED36826E8A06125D4EE06E05C27F461F25
+            3B6A1C7906B65FD5E63846F1C5D8E742E3A121D87AC27BBB3C01FE343E9F1397
+            5A1C900F607F00D19E59F8186C7BBCED075837D9F1D1486C955D902D12D40102
+            772A4809954876D401E82B6577ACA7ED7E7889054600FEA5D0E3E91DE3029761
+            B32987AA3BFFA3ECF055B081F02DD2032C5173C0AF84C0750A80EB01EC2A3B7C
+            1C7AA5DBF7A34FB78056823405E49849AE239EF310FACD6A534D4CEBDD6ED30D
+            BE4D5CB004CD81BBF3869C09DC4D425B91E0D3D06B64A7FD13D845E6DC0E2077
+            7F727EED354FA14F727B3FF47D6EDF82DE47B26081E702CE9309D2C3A8BB30C6
+            6DB7A1DB4580D7A076FB551040CE222E66A10A78AD32D9A93D127D0DDC965CB5
+            0B929B04EDC504D97341E0B36ED3FCAC928D42AF9A638E40092DC5EFA9163535
+            CD2E737B6A29569BE06AE320F02939914473B1104A20DBD2CB457C0C6BF791C8
+            067DE84FCD535E73919B53905D70B521682B22C16F7222D91DB2C1674BC7AEA5
+            D71EF85C821AF6B2F39A7AE9367883AB4D70B52108BA4F0E9E4843DC19F9906C
+            B44D71B79C81325A726D39866FD345795306D42EB8DA100CE3577220C12CE9F0
+            B9D249BACA1C7208755A9D57BDA8F0D04C90A82B894E4367907BC886BC4901E8
+            D3CC294720BF7E0265BCECA2C0C33341B2BBD548C26F5C1FEEBAA65691397560
+            A42F69D78BF37DB0CC0CB1D804FDE1DB602974C62C1D18E93F9347E80F17B4D9
+            F90DE25CC40AF18E8EF411B9C2457D4F4BBFCAB4584C5F7B7905D3FC6AFAD300
+            4CFB7277C91891EECE2B9D5FA23F8CC83ED3F28B0AE7D948BD63D22F24BCEC8E
+            3BEFE2FC4FE7790337D3FAC0EBA10259BF2C2E900E521F5DE917623F3DDC5148
+            6FEBA8486D52A477F6A4F36ACD3F56AF4229886164F289D087305BC2E743D033
+            2EE4B0F36CD8CB31CFB05FC0DC5C7B56B8B9DA5612AA9CFF7321858585576A5A
+            65239148EC7297BC818EDBAB81D52BEC9C0CD71FBAB7D334F05F780E74213789
+            D3F175AE8F14072DDF12CA17E87401EF8B83100392EC271BB27D1FA14F35A76C
+            A8B12520A1BEA15BB7E31711E49FECB5EC17B8EA21D743D5C8197B5E2958EF22
+            82444D7E2FB4277877D88604B51E910EB74F0BEC4BCDA131C84170350324D01E
+            57F872DB8E9EDAF2CC152835C1EBFD022B86E2AA2D1BF59BDE869283E06A0A04
+            693837AB4D17839EF391A04629B5C22648188D69DE8703307BCF350A3909AEA6
+            C0307E283B09B4DF94F39110A8F9AE6AFAD4D267B77677CA65A30FF3DCAD71C8
+            497055BA2DCF040E2689ED2E7A819CEEA450EF45D5A2E661E44BB36C9A5AE7FE
+            D093A32099404D276D8AD99A0D9F887E46ED5C8C8E0D9A1EDA3620ADC335C8E3
+            DC3616BD16424C4E34C7734109049CD3B764B40D14B64CA7A3872DFF2FE46781
+            ED00527626E7FB5E531761FB04A8DA59D92B3BED0BCCB939C85920D0763342A7
+            E16B60616B7F12FA51B757A03F88D8A6A9460E8DF62ECF79145DC772EA4F37F4
+            8D6ED7ECE86401CD410101046A75D2D94838E059877EB1FB0D425F2BBB43C70A
+            3ADFB0039B28C057BBF0B77397975B0640CEEF6103D54E9B36AF37B85DCF45F8
+            A1D83C142410B89544E12CA43BBA0E5B64DF8B3D1CF4A823B3B01D569B805C45
+            C716619F098D8574C0D389A622780F6814F4303EEFE07BF0EF288BD31EEF1C44
+            5B5CE0D7610B3BF05A8207C81E191EA8ABEFEB2603454A29BEC4DBB5043F8768
+            0FBBDAA0D9D8ED3DD31210B38958BDA93B2B175C476F2F600F535AC779D14722
+            80C0265F7624D411F37C7C6ABD883A310531F57CA00F859EE4A23FA0FD27E877
+            A81AAA810EC9E623360F1AE661CAAD63BCA9B4876733899FCE67229F80658064
+            CDFE00C4673485ECB911903762D3B4089B1791418CCE17E7902375FC865C8EAD
+            F925360BAD5A6DA8A737EDBD149CCF579B9D897307EB606BF866580E6D42DE0E
+            55221F8177C15F2F31FD0CD7A1E8683ED8CA882923BE009BE2F7637B1DFFB7A0
+            7F7F43908B194F271672278FD3C11681986A623F23C73DA86D7AC1B6DB4F0D75
+            04D2B66B197C04341459CF9BDE3FAA730CAA6400B41AE9CB6E2D775EFF54A37F
+            B6398FFF1962B1BF00CA292E394B3E63BF0000000049454E44AE426082}
+          FileName = 'C:\Projetos\listview\img\icons8-atualiza'#231#245'es-dispon'#237'veis-50.png'
+        end>
+      Align = Left
+      Cursor = crHandPoint
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 15.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 15.000000000000000000
+      Size.Width = 41.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = Image2Click
+    end
+  end
+  object lvPedido: TListView
+    ItemAppearanceClassName = 'TDynamicAppearance'
+    ItemEditAppearanceClassName = 'TDynamicAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    ItemSpaces.Left = 0.000000000000000000
+    ItemSpaces.Right = 0.000000000000000000
+    Align = Client
+    Size.Width = 360.000000000000000000
+    Size.Height = 466.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    ItemAppearance.ItemHeight = 90
+    ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+      item
+        AppearanceObjectName = 'txtPedido'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.Font.Size = 14.000000000000000000
+        Appearance.Font.StyleExt = {00060000000000000004000000}
+        Appearance.TextAlign = Leading
+        Appearance.TextColor = xFF0674EB
+        Appearance.Width = 121.000000000000000000
+        Appearance.Height = 20.000000000000000000
+        Appearance.PlaceOffset.X = 16.000000000000000000
+        Appearance.PlaceOffset.Y = 7.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'txtCliente'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.Font.Size = 14.000000000000000000
+        Appearance.TextAlign = Leading
+        Appearance.TextColor = claDarkgray
+        Appearance.Width = 201.000000000000000000
+        Appearance.Height = 20.000000000000000000
+        Appearance.PlaceOffset.X = 16.000000000000000000
+        Appearance.PlaceOffset.Y = 31.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'txtData'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.Font.Size = 14.000000000000000000
+        Appearance.TextAlign = Leading
+        Appearance.TextColor = claDarkgray
+        Appearance.Width = 201.000000000000000000
+        Appearance.Height = 20.000000000000000000
+        Appearance.PlaceOffset.X = 16.000000000000000000
+        Appearance.PlaceOffset.Y = 55.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'txtValor'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.Font.Size = 14.000000000000000000
+        Appearance.TextAlign = Trailing
+        Appearance.TextVertAlign = Trailing
+        Appearance.TextColor = claDarkgray
+        Appearance.Width = 104.000000000000000000
+        Appearance.Height = 20.000000000000000000
+        Appearance.Align = Trailing
+        Appearance.VertAlign = Trailing
+        Appearance.PlaceOffset.X = -5.000000000000000000
+        Appearance.PlaceOffset.Y = -64.000000000000000000
+      end>
+    ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+      item
+        AppearanceObjectName = 'Text1'
+        AppearanceClassName = 'TTextObjectAppearance'
+      end>
+    CanSwipeDelete = False
+    ShowSelection = False
+  end
+  object lytFiltro: TLayout
+    Align = Contents
+    Size.Width = 290.000000000000000000
+    Size.Height = 523.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 3
+    object rectFundo: TRectangle
+      Align = Contents
+      Fill.Color = claBlack
+      Opacity = 0.600000023841857900
+      Size.Width = 290.000000000000000000
+      Size.Height = 523.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      OnClick = imgFecharClick
+    end
+    object rectFiltro: TRectangle
+      Align = Bottom
+      Fill.Color = claWhite
+      Position.Y = 258.000000000000000000
+      Size.Width = 290.000000000000000000
+      Size.Height = 265.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object imgFechar: TImage
+        MultiResBitmap.Height = 64
+        MultiResBitmap.Width = 64
+        MultiResBitmap = <
+          item
+            Width = 64
+            Height = 64
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000040000000400806000000AA6971
+              DE000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              037C49444154785EE59B3DABD4401486A382E23F500B4B2B6B0BCBDBDA88A29D
+              A2A5A0B58D58DD4E04FF86D8F86D275CACAC04B1101BADF4DA0872C1AF46DF67
+              D959B2EB497692F9C864F3C203D790CC9CF76C32993919F755E975586C8993E2
+              E89C23B5BFD19739BBB5BFDF8997E2A7189D8E8B6BE2A9F821FEF6846B6983B6
+              68B3681D14D7C55B619989016DD3077D15A3FDE2B2F828ACA053405FF449DF83
+              EAACE059B582CC017D1343761D13AF8415D410100B3165D129F15958810C0931
+              115B525D12BF84154009101B31461783CD1D61755A22C41A6D803C201E0AABA3
+              9221E62849B82BAC0EC600774290AE08ABE131D17B4C382D7E0BABD131C1C0D8
+              F9EDC0BCFBABB01A1C23BC22BDE709AC105F0BABA131C364C94B1785D5C026B0
+              76DACC2BEFBDB02EDE04583BB4BE1AAF0AEBC24D8255A429D6D89F8475910FDF
+              C42DC100CA6314731CA12DDAA46DFAA02FEB3C1F584A9BF5841BC2BAC01702AB
+              8B4E1E09EBDC2ED0C66AC0F4659DEB0B4595FF145AC9B14A56A149B0CC23FAB2
+              CEF705AF4B0A6D10B8452DF54D42937914E34DB5F4835174B44EEA02CF6953C0
+              5D93D0669EE331C6173C2F44E5D53AA92BEB02F749428C367CC0F34CD4ED434A
+              D7AB8418C8651EF08CF7EACCFC404CFA18C969DE81F7EA66ED404CBA181AC23C
+              E0BDBA573B101B1F63439907BC57F76B0752B0CEE050E601EFD54EED402ADA92
+              60298779C07BF5A1762025BE49C8651EF05EEDD50EA4665D12729A87BDDC1F17
+              73EC47E8AC5C8FC06351E4239063107C227CCC3BE54AC20E8F00DB5252EA9938
+              2FFECCFEB52C8C5A89E1DC0B82BB26A5764900FB715209F3E74493F90773864A
+              C2CC7BAAA930E60F094BABB778DBDB61F5DC98CCA6C2291643CF85AF79C71049
+              982D86622F87FB9877E44CC262398C6215445E88BEE61DB992B02888A01825B1
+              3722D4BC635D12A297C46214459B3E38F4FDD5DA9210BD288A42CBE227C4AAFA
+              9A773425217A591C857E18D91675859A77584948F261844E423E8D7D17B705BF
+              CE283F8DA1497F1C4593FF3C8E628CB0A5E2B5AF78F25B641083CD643749394D
+              7A9B9CD3A4374A3A4D7AAB2C9AFC66694412C67427102B3147176342C90323B1
+              116352F17628F115494CC49645CC134A9A2C110B3165153346A6CD43AE1DE89B
+              1806FDE4C660C32A326429DD15FAA2CF24035D5FB1C6A6A8125A596A83B6E9A3
+              713D5F8A781E293A52790D29B9732D6DD05692673CC7B353F07F9FAFAA7F66F4
+              846E8EA7481C0000000049454E44AE426082}
+            FileName = 'C:\Projetos\listview\img\cancel.png'
+          end>
+        Anchors = [akTop, akRight]
+        Cursor = crHandPoint
+        Position.X = 249.000000000000000000
+        Size.Width = 33.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = imgFecharClick
+      end
+      object rectFiltroBotao: TRectangle
+        Align = Bottom
+        Fill.Color = xFF2C6E27
+        HitTest = False
+        Position.Y = 224.000000000000000000
+        Size.Width = 290.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object spdApFiltro: TSpeedButton
+          Align = Client
+          Cursor = crHandPoint
+          StyledSettings = [Style]
+          Size.Width = 290.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'FILTRAR'
+          TextSettings.Font.Family = 'Segoe UI Emoji'
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.FontColor = claWhite
+          OnClick = spdApFiltroClick
+        end
+      end
+      object edtPedido: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 3
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = xFF6A6A6A
+        Position.X = 20.000000000000000000
+        Position.Y = 55.000000000000000000
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 55.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Pedido'
+        StyledSettings = [Family, Style]
+      end
+      object edtCliente: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 2
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.FontColor = xFF6A6A6A
+        Position.X = 20.000000000000000000
+        Position.Y = 97.000000000000000000
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Cliente'
+        StyledSettings = [Family, Style]
+      end
+      object lytSeparador: TLayout
+        Align = Top
+        Margins.Top = 10.000000000000000000
+        Position.Y = 139.000000000000000000
+        Size.Width = 290.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        object dtInicio: TDateEdit
+          ShowClearButton = True
+          Date = 44978.000000000000000000
+          IsEmpty = True
+          Align = Scale
+          Cursor = crHandPoint
+          Position.X = 20.000000000000000000
+          Size.Width = 108.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Style]
+          TabOrder = 1
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = xFF6A6A6A
+        end
+        object dtFim: TDateEdit
+          ShowClearButton = True
+          Date = 44978.000000000000000000
+          IsEmpty = True
+          Align = Scale
+          Cursor = crHandPoint
+          Position.X = 162.000000000000000000
+          Size.Width = 108.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Style]
+          TabOrder = 0
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = xFF6A6A6A
+        end
+      end
+      object lytFinal: TLayout
+        Align = Top
+        Margins.Top = 10.000000000000000000
+        Position.Y = 181.000000000000000000
+        Size.Width = 290.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        object edtValorIni: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 3
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = xFF6A6A6A
+          Position.X = 20.000000000000000000
+          Position.Y = 2.000000000000000000
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Size.Width = 108.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Valor min'
+          StyledSettings = [Family, Style]
+        end
+        object edtValorMax: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 2
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = xFF6A6A6A
+          Position.X = 162.000000000000000000
+          Position.Y = 2.000000000000000000
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Size.Width = 107.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Valor max'
+          StyledSettings = [Family, Style]
+        end
+      end
+      object btnLimpar: TSpeedButton
+        Cursor = crHandPoint
+        StyledSettings = [Family]
+        Position.X = 20.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 93.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'LIMPAR CAMPOS'
+        TextSettings.Font.Size = 10.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = xFF005FF9
+        OnClick = btnLimparClick
+      end
+    end
+  end
+end
